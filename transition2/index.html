@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transition 2</title>
+	<style>
+		body {margin: 0; padding: 0;}
+
+/*	 scale, scaleX, ScaleY,
+rotate, rotateX,rotateY,
+skew, skewX, skewY,
+translate, translateX, translate Y	*/
+		.kotak { 
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			text-align: center;
+			line-height: 100px;
+		 }
+		 .kotak1 {
+		 	transition:  all 5s ease;
+		 }
+		 .kotak2 {
+		 	transition: all 5s ease-in;
+		 }
+		 .container {
+		 	width: 900px;
+		 	border:solid 5px black;
+		 }
+
+		 .container:hover .kotak {
+		 	transform: rotate(720deg);
+		 	margin-left: 800px;
+		 	background-color: royalblue;
+		 }
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="kotak kotak1">ease</div>
+	<div class="kotak kotak2">ease-in</div>
+	</div>
+	
+</body>
+</html>

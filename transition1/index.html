@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transition 1</title>
+	<style>
+		body {margin: 0; padding: 0;}
+
+/*	 scale, scaleX, ScaleY,
+rotate, rotateX,rotateY,
+skew, skewX, skewY,
+translate, translateX, translate Y	*/
+		.kotak { 
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			transition: 1s;
+
+		 }
+		 .container {
+		 	width: 900px;
+		 	border:solid 1px black;
+		 }
+
+		 .container:hover .kotak {
+		 	transform: rotate(45deg);
+		 	margin-left: 800px;
+		 	background-color: royalblue;
+		 }
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="kotak"></div>
+	</div>
+	
+</body>
+</html>
